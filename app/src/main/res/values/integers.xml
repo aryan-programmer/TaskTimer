@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="duration_name_weight">3</integer>
+	<integer name="duration_description_weight">5</integer>
+	<integer name="duration_start_date_weight">2</integer>
+	<integer name="duration_duration_weight">2</integer>
+</resources>

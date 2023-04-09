@@ -1,0 +1,52 @@
+<resources>
+	<string name="app_name">TaskTimer</string>
+	<!-- Strings used for fragments for navigation -->
+	<string name="first_fragment_label">First Fragment</string>
+	<string name="second_fragment_label">Second Fragment</string>
+	<string name="next">Next</string>
+	<string name="previous">Previous</string>
+
+	<string name="no_task_message">No task selected.</string>
+
+	<string name="menu_main__instructions">Instructions</string>
+	<string name="menu_main__add_task">Add Task</string>
+	<string name="menu_main__show_durations">Show Durations Report</string>
+	<string name="menu_main__show_about">About TaskTimer</string>
+	<string name="menu_main__generate">Generate Data</string>
+	<string name="edit_btn_desc">Button to Edit Task Details</string>
+	<string name="delete_btn_desc">Button to Delete Task</string>
+	<string name="add_edit__name_hint">Task name</string>
+	<string name="add_edit__description_hint">Task description (optional)</string>
+	<string name="add_edit__sort_order_hint">Sort order (sorts ascending) (optional)</string>
+	<string name="add_edit__save_btn">Save</string>
+	<string name="title_activity_add_edit">AddEditActivity</string>
+
+	<string name="hello_first_fragment">Hello first fragment</string>
+	<string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+	<string name="instructions_descriptive">Use the add button (+) in the toolbar above to create new tasks.\n\nTasks with lower sort orders will be placed higher up the list.Tasks with the same sort order will be sorted alphabetically.\n\nTapping a task will start the timer for that task (and will stop the timer for any previous task that was being timed).\n\nEach task has Edit and Delete buttons if you want to change the details or remove the task.</string>
+	<string name="instructions_heading">Instructions</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="del_diag__pos_caption">Delete</string>
+	<string name="del_diag__message">Deleting will also delete all timing data associated with task id %1$d: %2$s.</string>
+	<string name="cancel_edit_diag__message">You have unsaved changes. Do you want to abandon the changes or continue editing?</string>
+	<string name="cancel_edit_diag__pos_caption">Abandon Changes</string>
+	<string name="cancel_edit_diag__neg_caption">Continue Editing</string>
+	<string name="about_copyright">Copyright 2021 &lt;COMPANY-NAME&gt;</string>
+	<string name="about_weblink">Instructions available at &lt;www.companyname.com&gt;</string>
+	<string name="about_email">For support, email &lt;tasktimer@www.companyname.com&gt;</string>
+	<string name="about_credits">Icon from <b>analog clock</b> at openclipart.org</string>
+	<string name="timing_task_t_message">Timing %1$s</string>
+	<string name="duration__task_name_btn">Task Name</string>
+	<string name="duration__start_date_btn">Start Date</string>
+	<string name="duration__duration_btn">Duration</string>
+	<string name="duration__description_btn">Description</string>
+	<string name="dur_rep_activity_label">Duration Report</string>
+	<string name="dur_menu__period__day">Show day</string>
+	<string name="dur_menu__period__week">Show week</string>
+	<string name="dur_menu__date">Set report date</string>
+	<string name="dur_menu__delete">Delete all timings up to</string>
+	<string name="delete_timings_diag__message">Are you sure you want to delete all timings before %1$s?</string>
+	<string name="dur_date_filter_diag__message">Select date for report:</string>
+	<string name="dur_date_del_upto_diag__message">Select date to delete up to:</string>
+</resources>

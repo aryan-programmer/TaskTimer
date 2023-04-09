@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".FragmentAddEdit">
+
+	<EditText
+			android:id="@+id/add_edit__name"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="16dp"
+			android:layout_marginEnd="8dp"
+			android:ems="10"
+			android:hint="@string/add_edit__name_hint"
+			android:inputType="textAutoCorrect|text"
+			android:maxLength="64"
+			android:singleLine="false"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+	<EditText
+			android:id="@+id/add_edit__description"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="16dp"
+			android:layout_marginEnd="8dp"
+			android:ems="10"
+			android:hint="@string/add_edit__description_hint"
+			android:inputType="textAutoCorrect|text"
+			android:maxLength="256"
+			android:singleLine="false"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/add_edit__name" />
+
+	<EditText
+			android:id="@+id/add_edit__sort_order"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="16dp"
+			android:layout_marginEnd="8dp"
+			android:ems="10"
+			android:hint="@string/add_edit__sort_order_hint"
+			android:inputType="number"
+			android:maxLength="9"
+			android:maxLines="1"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/add_edit__description" />
+
+	<Button
+			android:id="@+id/add_edit__save_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:drawableStart="@android:drawable/ic_menu_save"
+			android:drawableLeft="@android:drawable/ic_menu_save"
+			android:minWidth="125dp"
+			android:text="@string/add_edit__save_btn"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/add_edit__sort_order" />
+</androidx.constraintlayout.widget.ConstraintLayout>

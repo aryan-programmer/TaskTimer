@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		app:layout_constraintHorizontal_chainStyle="spread">
+
+	<Button
+			android:id="@+id/dur__name_h1btn"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="8dp"
+			android:padding="@dimen/medium_spacing"
+			android:text="@string/duration__task_name_btn"
+			android:textAlignment="textStart"
+			android:textAllCaps="false"
+			android:textStyle="bold"
+			app:layout_constraintEnd_toStartOf="@+id/dur__description_h1btn"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintHorizontal_weight="@integer/duration_name_weight"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+			android:id="@+id/dur__description_h1btn"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			android:padding="@dimen/medium_spacing"
+			android:text="@string/duration__description_btn"
+			android:textAlignment="textStart"
+			android:textAllCaps="false"
+			android:textStyle="bold"
+			app:layout_constraintBaseline_toBaselineOf="@+id/dur__name_h1btn"
+			app:layout_constraintEnd_toStartOf="@+id/dur__start_date_h1btn"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintHorizontal_weight="@integer/duration_description_weight"
+			app:layout_constraintStart_toEndOf="@+id/dur__name_h1btn" />
+	<Button
+			android:id="@+id/dur__start_date_h1btn"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			android:padding="@dimen/medium_spacing"
+			android:text="@string/duration__start_date_btn"
+			android:textAlignment="textStart"
+			android:textAllCaps="false"
+			android:textStyle="bold"
+			app:layout_constraintBaseline_toBaselineOf="@+id/dur__description_h1btn"
+			app:layout_constraintEnd_toStartOf="@+id/dur__duration_h1btn"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintHorizontal_weight="@integer/duration_start_date_weight"
+			app:layout_constraintStart_toEndOf="@+id/dur__description_h1btn" />
+
+	<Button
+			android:id="@+id/dur__duration_h1btn"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			android:padding="@dimen/medium_spacing"
+			android:text="@string/duration__duration_btn"
+			android:textAlignment="textStart"
+			android:textAllCaps="false"
+			android:textStyle="bold"
+			app:layout_constraintBaseline_toBaselineOf="@+id/dur__start_date_h1btn"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.5"
+			app:layout_constraintHorizontal_weight="@integer/duration_duration_weight"
+			app:layout_constraintStart_toEndOf="@+id/dur__start_date_h1btn" />
+
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/dur__durations_list"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_marginBottom="8dp"
+			android:scrollbars="vertical"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/dur__name_h1btn"
+			tools:listitem="@layout/task_duration_list_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>
